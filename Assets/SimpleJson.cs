@@ -35,7 +35,24 @@ public class SimpleJson : MonoBehaviour
     {
         // Deserialize
         PersonalInfo personalInfo = JsonUtility.FromJson<PersonalInfo>(jsonString);
-
         Debug.Log("Age :" + personalInfo.age);
+
+        // Serialize
+        PersonalInfo personalInfo2 = new PersonalInfo()
+        {
+            first_name = "ABC",
+            age = 20,
+            company = new Company()
+            {
+                name = "COMPANY",
+                position = "General manager"
+            },
+            programming_languages = new ProgrammingLanguage[]
+            {
+                new ProgrammingLanguage(){ name = "Python", level = 1}
+            }
+        };
+        string jsonStr = JsonUtility.ToJson(personalInfo2);
+        Debug.Log(jsonStr);
     }
 }
