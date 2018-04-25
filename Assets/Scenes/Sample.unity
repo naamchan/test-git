@@ -125,6 +125,8 @@ GameObject:
   - component: {fileID: 1811689093}
   - component: {fileID: 1811689092}
   - component: {fileID: 1811689096}
+  - component: {fileID: 1811689097}
+  - component: {fileID: 1811689098}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -201,7 +203,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1811689091}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: af97b52c470505b4fbd2bdb3d7120477, type: 3}
   m_Name: 
@@ -211,3 +213,25 @@ MonoBehaviour:
     [ \t\t{ \t\t\t\"name\": \"C\", \t\t\t\"level\": 3 \t\t}, \t\t{ \t\t\t\"name\":
     \"C++\", \t\t\t\"level\": 4 \t\t}, \t\t{ \t\t\t\"name\": \"C#\", \t\t\t\"level\":
     5 \t\t} \t] }"
+--- !u!114 &1811689097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1811689091}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8259099d91bbbea4f931040a869d92e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1811689098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1811689091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb62d44a8b9f88f4bbc20e99b9069edb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

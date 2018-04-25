@@ -52,7 +52,5 @@ public class SimpleJson : MonoBehaviour
                 new ProgrammingLanguage(){ name = "Python", level = 1}
             }
         };
-        string jsonStr = JsonUtility.ToJson(personalInfo2);
-        Debug.Log(jsonStr);
     }
 }
